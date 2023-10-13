@@ -12,7 +12,17 @@ body {
   background: linear-gradient(to right, #f0fff0, #79ac78, #557e55);
   font-family: sans-serif;
 }
-
+.message{
+  padding: 1rem;
+  color: black;
+  background-color: white;
+  border: 1px solid var(--blue);
+  border-radius: 5px;
+  text-align: center;
+  margin: 0 auto 2rem;
+  width: 60%;
+  max-width: 60%;
+}
 #navbar {
   display: flex;
   justify-content: center;
@@ -273,6 +283,7 @@ a {
   justify-content: center;
   align-items: center;
   height: 50%;
+  margin-bottom: 10rem;
 }
 
 #mapid {
@@ -305,8 +316,8 @@ a {
   gap: 8rem;
   justify-content: center;
   align-items: center;
-  padding-top: 13rem;
-  padding-bottom: 4rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
   /* background-color: rgba(228, 219, 219, 0.548); */
   background: linear-gradient(to right, #d4dfd5, #6f9670);
   height: 100%;
@@ -529,7 +540,7 @@ footer {
   justify-content: space-between;
   background-color: #053d08;
   padding: 2rem 0;
-  height: 60vh;
+  height: 40vh;
   z-index: 99;
   position: relative;
 }
