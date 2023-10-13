@@ -1,0 +1,41 @@
+<div class="page-create">
+
+    <img src="/img/imagem.png" alt="">
+
+    <div class="cadastro">
+
+        <h1>Cadastre-se </h1>
+
+
+        <form action="/user/create" method="post">
+            <div class="form-control">
+                <label for="name">NOME COMPLETO:</label><br>
+                <input type="text" name="name" placeholder="Insira seu Nome" required>
+            </div>
+            <div class="form-control">
+                <label for="email">EMAIL:</label><br>
+                <input type="email" name="email" placeholder="Insira seu Email" required>
+            </div>
+            <div class="form-control">
+                <label for="tel">TELEFONE:</label><br>
+                <input type="text" name="tel" placeholder="Insira seu telefone">
+            </div>
+            <div class="form-control">
+                <label for="password">SENHA:</label><br>
+                <input type="password" name="password" placeholder="Insira sua senha" min="8" required>
+            </div>
+            <div class="form-control">
+                <label for="confirmpassword">Confirme sua Senha:</label>
+                <input type="password" name="confirmpassword" placeholder="Confirme sua senha" />
+            </div>
+            <div class="form-control">
+                <input type="submit" value="Cadastrar">
+            </div>
+            <p>Já possui conta?<a href="/user/login"> conect-se! </a></p>
+        </form>
+    </div>
+
+
+
+
+</div>

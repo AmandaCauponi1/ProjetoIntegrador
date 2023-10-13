@@ -1,0 +1,122 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lixo Eletronico</title>
+  <link rel="stylesheet" href="/css/style.css">
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin="" />
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+
+</head>
+
+<body>
+
+
+  <nav id="navbar">
+    <img class="img1" src="/img/pngaaa 4.png" alt="">
+    <ul>
+      <li class="logo-company">
+        <a href="/">
+          <p class="company">EDMS</p>
+          <p>SOLUÇÕES EM SOFTWARE</p>
+        </a>
+      </li>
+
+      <li>
+        <a href="#contato">
+          <p class="contato">CONTATO</p>
+        </a>
+      </li>
+
+
+      <li>
+        <a href="/to-search">
+          <p>PONTOS DE COLETA</p>
+        </a>
+      </li>
+
+      <li>
+        <a href="/user/create" id="btn1">
+          <p>REGISTRE-SE JÁ</p>
+        </a>
+      </li>
+      <li>
+        <a href="/user/points" id="btn1">
+           <i> <img src="/assets/loc.svg" alt=""> </i>
+          <p>PONTOS</p>
+        </a>
+      </li>
+    </ul>
+    <img class="img2" src="/img/pngaaa 3.png" alt="">
+  </nav>
+
+  <div class="container">
+   {{!-- //criando as flashsmessages --}}
+      {{#if messages.message }}
+      <div class="message">
+        {{messages.message}}
+      </div>
+      {{/if}}
+      {{{body}}}
+  </div>
+
+
+
+
+  <footer id="contato">
+    <section class="text-footer">
+      <div class="boxtext-footer">
+        <p>EDMS</p>
+        <a href="#">Sobre nós</a>
+        <a href="/to-search">Pontos de coleta</a>
+      </div>
+
+
+      <div class="boxtext-footer">
+        <a href="/company-create">
+          <p>Seja um ponto de coleta voluntário</p>
+          Pilhas/Eletrônicos
+        </a>
+      </div>
+
+
+      <div class="boxtext-footer">
+        <p>Nossos programas</p>
+        <a href="#">Pilhas</a>
+        <a href="#">Eletrônicos</a>
+      </div>
+    </section>
+
+
+    <form action="" class="form-footer">
+      <p>Fale Conosco:</p>
+      <input class="footer-input" type="email" placeholder="E-mail:">
+      <input class="footer-input" type="tel" placeholder="Telefone:">
+      <input class="footer-input" type="text" placeholder="Tipo Selecionar...">
+      <input class="footer-input-mensagem" type="text" placeholder="Mensagem:">
+      <input class="footer-input-button" type="submit" value="Enviar">
+    </form>
+
+
+
+
+  </footer>
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
